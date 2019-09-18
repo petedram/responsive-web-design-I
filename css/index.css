@@ -197,9 +197,21 @@ hr  {
 }
 
 @media(max-width:800px) {
-    * {
-        background:red;
+    .header1_image {
+        display:none;
     }
+
+    .navigation {
+        flex-wrap:wrap-reverse;
+    }
+
+ 
+/* work out how to wrap image.. */
+    /* #logo:after {
+        display:block;
+        content:' \A ';
+    } */
+
 }
 
 @media(max-width:500px) {
