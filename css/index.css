@@ -196,3 +196,14 @@ hr  {
   justify-content:center;
 }
 
+@media(max-width:800px) {
+    * {
+        background:red;
+    }
+}
+
+@media(max-width:500px) {
+    * {
+        background:yellow;
+    }
+}
