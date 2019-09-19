@@ -1,3 +1,373 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
 
 
+/* Container */
+.navigation {
+  display: flex;
+  align-items:center;
+  width:100%;
+  /*  this aligns the nav center  */
+  justify-content: space-evenly;
+  /* This ensures Nav remains visible on narrow width*/
+}
+
+.navigation a, .navigation img {
+  color:#a6a6a6;
+  padding:20px;
+  text-decoration:none;
+}
+
+/* Container */
+.header1 {
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  width: 100%;
+  justify-content:center;
+  margin-bottom:70px;
+  margin-top:35px;
+}
+
+.header1_box {
+  font-size:70px;
+  width:50%;
+  text-align:center;
+
+}
+
+.header1_button {
+  border:1px solid black;
+  width:40%;
+  margin-bottom:5%;
+  font-size:20px;
+  padding:10px;
+}
+
+.header1_image {
+  text-align:center;
+  width:50%;
+}
+
+hr  {
+  width:80%;
+}
+
+
+/* Container */
+.sidebyside2 {
+  display:flex;
+  justify-content: space-evenly;
+  width:80%;
+  margin-left:10%;
+  flex-wrap:wrap;
+  align-items:center;
+  margin-top:20px;
+  margin-bottom:20px;
+
+}
+
+.features {
+  vertical-align:middle;
+  text-align:left;
+  width:50%;
+
+}
+
+.about {
+  vertical-align:middle;
+  text-align:left;
+  width:50%;
+  padding-left:10px;
+}
+
+.middle-img {
+  display:flex;
+  align-items:center;
+  width:80%;
+  margin-left:10%;
+  padding-top:10px;
+}
+/* container */
+.sidebyside3 {
+  display:flex;
+  width:80%;
+  margin-left:10%;
+  margin-top:30px;
+  margin-bottom:30px;
+  flex-wrap:wrap;
+  justify-content:middle;
+  vertical-align:middle;
+
+}
+
+.services {
+  width:33%;
+  text-align:left;
+}
+
+.product {
+  width:33%;
+  text-align:left;
+}
+
+.vision {
+  width:33%;
+  text-align:left;
+}
+
+.contact {
+  width:20%;
+  margin-left:10%;
+  margin-top:20px;
+  margin-bottom:20px;  
+}
+
+.foot {
+  display:flex;
+  width:100%;
+  justify-content:center;
+}
+
+@media(max-width:800px) {
+    .header1_image {
+        display:none;
+    }
+
+    .navigation {
+        flex-wrap:wrap-reverse;
+        font-size:70%;
+    }
+
+    .navigation img {
+        padding-left:120px;
+        padding-right:120px;
+    }
+
+
+
+    .header1_box {
+        font-size:300%;
+    }
+
+    .header1 {
+    margin-bottom:20px;
+    }
+
+
+
+    .header1_button {
+        font-size:15px;
+      }
+
+    header {
+        font-size:80%;
+    }
+
+    section {
+        font-size:80%;
+    }
+
+    .services {
+    padding:5px;
+    }
+    .product {
+    padding:5px;
+    }
+    .vision {
+    padding:5px;
+    }
+
+    .sidebyside2 {
+        width:90%;
+        margin-left:5%;
+      }
+    
+    .sidebyside3 {
+        width:90%;
+        margin-left:5%;
+      }
+
+    .middle-img {
+        width:90%;
+        margin-left:5%;
+      }
+
+      hr  {
+        width:90%;
+      }
+
+      .contact {
+        font-size:85%;
+        margin-left:5%;
+        width:200px;
+      }
+      
+      .foot {
+        padding-bottom:20px;
+        font-size:75%;
+      }
+}
+
+@media(max-width:500px) {
+  
+    .navigation {
+        flex-wrap:wrap;
+        text-align:center;
+        font-size:100%;
+    }
+
+    .header1_button {
+        width:150px;
+    }
+
+    #logo {
+        order:-1;
+    }
+
+    a {
+        width:100%;
+        /* add a border, align center, caution order of items! */
+        border:1px solid lightgrey;
+
+    }
+
+    .navigation a {
+        padding:15px;
+
+    }
+
+    .header1_box {
+        font-size:500%;
+    }
+
+    .sidebyside2 {
+        width:90%;
+        margin-left:5%;
+        flex-wrap:wrap;
+        align-content: stretch;
+      }
+      
+      .features {
+        width:100%;
+        padding: 5px;
+        padding-top:20px;
+        padding-bottom:20px;
+
+      }
+      
+      .about {
+        width:100%;
+        padding: 5px;
+        padding-top:20px;
+        padding-bottom:20px;
+      }
+
+      .sidebyside3 {
+        width:90%;
+        margin-left:5%;
+        flex-wrap:wrap;
+        align-content: stretch;
+      }
+
+      .middle-img {
+        width:90%;
+        margin-left:5%;
+      }
+
+      .services {
+        width:100%;
+        padding: 5px;
+        padding-top:20px;
+        padding-bottom:20px;
+      }
+      .product {
+        width:100%;
+        padding: 5px;
+        padding-top:20px;
+        padding-bottom:20px;
+      }
+      .vision {
+        width:100%;
+        padding: 5px;
+        padding-top:20px;
+      }
+
+      hr  {
+        width:90%;
+      }
+
+      .contact {
+        font-size:85%;
+        margin-left:5%;
+        width:200px;
+      }
+      
+      .foot {
+        padding-bottom:20px;
+      }
+}
